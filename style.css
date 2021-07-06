@@ -1,0 +1,19 @@
+html{ background-color: black;
+
+}
+div{
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	border:3px solid black;
+}
+.div1{
+	width:200px;
+	height200px;
+	background-color:blue;
+}
+#div2{
+	width:200px;
+	height:200px;
+	background-color:pink;
+}
