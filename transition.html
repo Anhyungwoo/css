@@ -1,0 +1,28 @@
+<!doctipe html>
+<html>
+ <head>
+   <meta charset='utf-8'>
+   <title>transition</title>
+   <style>
+    .div{
+	  width:100px;
+	  height:100px;
+	  background-color: orange;
+	  /*transition: all 2s;*/
+	  /*transition-property: width, height;
+	  transition-duration: 0.5s;
+	  transition-timing-function:ease-out;
+	  transition-delay: 2s;*/
+	  /*transition: width 2s ease-in-out 2s, height 2s ease-in-out 2s;*/
+	  transition: all 0.5s ease-in-out 0.1s;
+	}
+	.div:hover {
+	  width: 300px;
+	  height: 300px;
+	}
+   </style>
+ </head>
+   <body>
+      <div class='div'>마우스를 갖다대시오</div>
+   </body>
+</html>
