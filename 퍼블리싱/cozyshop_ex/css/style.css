@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+    box-sizing:border-box;	
+}
+
+html {
+	font-size:13px;
+}
+
+body {
+	margin:0;
+}
+
+a {
+	text-decoration:none;
+}
+
+.layout_width {
+	width:1200px;
+	margin:0 auto;
+}
+
+/* 사이트 상단 메뉴 */
+
+.site_top {
+	height:30px;
+	text-align:right;
+	background-color:#f9f9f9;
+}
+
+.site_top a{
+	font_size:12px;
+	letter-spacing:-0.24px;
+	color:#333333;
+	padding:0 10px 0 11px;
+	line-height:30px;
+	position:relative;
+	display:inline-block;
+	text-transform:uppercase;
+}
+
+.site_top a:before {
+	content:'';
+	display:block;
+	width:1px;
+	height:9px;
+	background-color:#333333;
+	position:absolute;
+	top:11px;
+	left:0;
+}
+
+.site_top .first:before {
+	display:none;
+}
+
+/* 아이콘메뉴, 로고, 검색창 */
+
+.logo_search .box {
+	width:calc(100% / 3);
+	float:left;
+}
+
+.logo_search .inner:after {
+	clear:left;
+	content:'';
+	display:block;
+}
+
+.logo_search .icon_menu img {
+	vertical-align:top;
+}
+
+.logo_search .icon_menu a:nth-child(1) img {
+	height:62px;
+	position:relative;
+	top:3px
+}
+
+.logo_search .icon_menu a:nth-child(2) img,
+.logo_search .icon_menu a:nth-child(3) img {
+	height:68px;
+}
+
+.logo_search .icon_menu {
+	padding:26px 0;
+}
+
+
+.logo_search .logo {
+	text-align:center;
+	padding:46px 0; 
+}
+
+.logo_search .logo img {
+	height:28px;
+}
+
+.logo_search .search {
+	padding-top:40px;
+}
+
+.logo_search .search input[type='image'] {
+	height:37px;
+	vertical-align:middle;
+}
+
+.logo_search .search .form_wrap {
+	width:200px;
+	height:38px;
+	border-bottom:1px solid #222222;
+	float:right;
+}
+
+.logo_search .search:after {
+	clear:right;
+	content:'';
+	display:block;
+}
+
+.logo_search .search input[type='text'] {
+	width:calc(100% - 27px);
+	border:0;
+	position:relative;
+	top:5px;
+}
+
+/* 메인 메뉴 */
+
+nav {
+	border-bottom: 1px solid #000000;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav ul li { 
+	float: left;
+	width: calc((100% - 50px) / 10);
+	text-align: center;
+}
+
+nav ul:after {
+	clear: left;
+	content: '';
+	display: block;
+}
+
+nav li a {
+	display: block;
+	height: 45px;
+	font-size: 16px;
+	letter-spacing: -0.32px;
+	line-height: 45px;
+}
+
+nav li i { 
+	font-size: 1.8rem;
+	vertical-align: middle;
+	position: relative;
+	top: 12px;
+	cursor: pointer;
+}
+
+nav li.more_menu {
+	width: 50px;
+	text-align: center;
+}
+
+/* 메인 배너 */
+
+.main_banner {
+	margin-bottom:103px;
+}
+
+.main_banner .swiper-slide {
+	height:600px;
+}
+
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n+1) {
+	background:url('../img/banner1.jpg') no-repeat center center;
+}
+
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n+2) {
+	background:url('../img/banner2.jpg') no-repeat center center;
+}
+
+.main_banner .swiper-wrapper .swiper-slide:nth-child(3n) {
+	background:url('../img/banner3.jpg') no-repeat center center;
+}
+
+.main_banner .swiper-pagination-bullet {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #ffffff;
+	cursor: pointer;
+	border-radius: 50%;
+	opacity: 0.9;
+	box-shadow: 0px 2px 4px #212121;
+}
+
+.main_banner .swiper-pagination-bullet-active {
+	width: 50px;
+	border-radius: 6px;
+}
+
+.main_banner .navi {
+	position:absolute;
+	font-size:30px;
+	top:calc(600px / 2 - 15px);
+	z-index:10;
+	cursor:pointer;
+}
+
+.main_banner .navi.prev {
+	left:10px;
+}
+
+.main_banner .navi.next {
+	right:10px;
+}
